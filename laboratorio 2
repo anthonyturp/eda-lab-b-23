@@ -42,3 +42,39 @@ public static void main(String[] args)
    triangulo(3);
 }  
 
+//constructores en arraylist
+new ArrayList()
+new ArrayList(int size)
+metodos principales de un arraylist
+
+void add(int index, E element)
+boolean addAll(Collection<? extends E> c)
+boolean add(E e)
+boolean addAll(int index, Collection<? extends E> c)
+void clear()
+boolean isEmpty()
+Iterator()
+listIterator()
+E get(int index)
+void ensureCapacity(int requiredCapacity)
+int lastIndexOf(Object o)
+Object[] toArray()
+Object clone()
+<T> T[] toArray(T[] a)
+boolean contains(Object o)
+int indexOf(Object o)
+E remove(int index)
+boolean remove(Object o)
+boolean removeAll(Collection<?> c)
+boolean removeIf(Predicate<? super E> filter)
+protected void removeRange(int fromIndex, int toIndex)
+void replaceAll(UnaryOperator<E> operator)
+void retainAll(Collection<?> c)
+E set(int index, E element)
+void sort(Comparator<? super E> c)
+Spliterator<E> spliterator()
+int size()
+List<E> subList(int fromIndex, int toIndex)
+void trimToSize()
+
+
