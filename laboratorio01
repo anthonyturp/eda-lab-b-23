@@ -6,7 +6,7 @@ public class HolaMundo {
 
 }
 
-public class HolaMundo {
+public class Bienvenida al curso {
 
 	public static void main(String[] args) {		
 		System.out.println("Bienvenida al curso");
@@ -14,7 +14,7 @@ public class HolaMundo {
 
 }
 
-public class HolaMundo {
+public class imprimir su nombre {
 
 	public static void main(String[] args) {		
 		System.out.println("Anthony Giovanny Turpo Cruz");
