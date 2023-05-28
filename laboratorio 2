@@ -1,1 +1,44 @@
+public int[] invertirArray(int[] A){
+    /** */
+    //Procedimiento para invertir la matriz
+    /** 
+    for (int i=0; i<numeros.length/2; i++) {
+            aux = numeros[i];
+            numeros[i] = numeros[numeros.length-1-i];
+            numeros[numeros.length-1-i] = aux;
+        }
+    return aux;
+}
+
+public int[] rotarIzquierdaArray(int[] A){
+    /** */
+    //Procedimiento para rotar la matriz
+    /** */
+    int primero = numeros[0];
+  int x;
+  for(x= 0; x<numeros.length-1; x++)
+    numeros[x] = numeros[x+1];
+  numeros[x]= primero;
+    return numeros;
+}
+
+static void filatriangulo(int n){
+  if(n>0){
+      System.out.print("* ");
+      filatriangulo(n-1);
+  }
+  else System.out.println();
+}
+static void triangulo(int n)
+{
+  if(n>0){
+     triangulo(n-1);
+     filatriangulo(n);
+  }
+}
+
+public static void main(String[] args)
+{
+   triangulo(3);
+}  
 
