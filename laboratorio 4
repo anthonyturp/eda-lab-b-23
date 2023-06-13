@@ -1,3 +1,33 @@
 # eda-lab-b-23a
 laboratorio 4
-Introduccion:
+fgIntroducción:
+
+Los árboles binarios son una estructura de datos que se basa en la jerarquía padre-hijo, donde cada nodo tiene al menos dos hijos (izquierdo y derecho) y sigue una regla de ordenamiento. Estos árboles se usan comúnmente para implementar estructuras de búsqueda eficientes y para representar claves en aplicaciones de sistemas de información de alto rendimiento. En este informe, se discutirá la implementación de árboles binarios en Java y se detallarán las funciones de búsqueda, inserción y eliminación.
+
+Implementación:
+
+Para implementar un árbol binario en Java, se debe crear una clase para los nodos del árbol y otra para el árbol en sí. A continuación, se detallan las funciones a implementar:
+
+search(item): Esta función busca un elemento dado en el árbol y devuelve verdadero si se encuentra en el árbol y falso en caso contrario. Esta función se puede implementar utilizando la técnica de búsqueda binaria.
+
+getmin(): Esta función devuelve el valor mínimo almacenado en el árbol. Para ello, se debe recorrer el árbol hacia la izquierda hasta encontrar el nodo más a la izquierda del árbol, que será el mínimo.
+
+getmax(): Esta función devuelve el valor máximo almacenado en el árbol. Para ello, se debe recorrer el árbol hacia la derecha hasta encontrar el nodo más a la derecha del árbol, que será el máximo.
+
+parent(item): Esta función devuelve el valor del nodo padre de un elemento dado en el árbol. Si el elemento se encuentra en la raíz del árbol, la función debe devolver null.
+
+son(item1, item2): Esta función devuelve verdadero si los elementos item1 y item2 son hermanos en el árbol y falso en caso contrario.
+
+insert(item): Esta función inserta un nuevo elemento en el árbol. Para ello, se debe recorrer el árbol aplicando la regla del ordenamiento y ubicar el lugar donde el nuevo elemento debe ser insertado.
+
+remove(item): Esta función elimina un elemento del árbol. Para ello, se debe recorrer el árbol hacia abajo hasta encontrar el elemento a eliminar y luego aplicar una de las siguientes reglas:
+
+a. Si el nodo a eliminar es una hoja, simplemente se elimina del árbol.
+
+b. Si el nodo a eliminar tiene un solo hijo, se reemplaza el nodo por su hijo.
+
+c. Si el nodo a eliminar tiene dos hijos, se reemplaza el nodo por el nodo siguiente en el orden de clasificación del árbol.
+
+Conclusión:
+
+La implementación de árboles binarios en Java es una técnica muy útil para almacenar y buscar datos de manera eficiente. Los árboles binarios pueden ser utilizados en una amplia variedad de aplicaciones, desde sistemas de información hasta videojuegos. La implementación de las funciones detalladas anteriormente permitirá a los programadores aprovechar al máximo los árboles binarios y crear soluciones de software más efectivas para sus necesidades.h
