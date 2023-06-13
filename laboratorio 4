@@ -1,6 +1,6 @@
 # eda-lab-b-23a
 laboratorio 4
-fgIntroducción:
+Introducción:
 
 Los árboles binarios son una estructura de datos que se basa en la jerarquía padre-hijo, donde cada nodo tiene al menos dos hijos (izquierdo y derecho) y sigue una regla de ordenamiento. Estos árboles se usan comúnmente para implementar estructuras de búsqueda eficientes y para representar claves en aplicaciones de sistemas de información de alto rendimiento. En este informe, se discutirá la implementación de árboles binarios en Java y se detallarán las funciones de búsqueda, inserción y eliminación.
 
