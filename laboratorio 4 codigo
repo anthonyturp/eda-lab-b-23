@@ -1,0 +1,16 @@
+Encontrado (Arbol, buscado){
+Si no existe Arbol -> No encontrado
+Si existe Arbol {
+   Si valor Raiz= buscado ->Encontrado
+   Si valor Raiz <> buscado{
+       Si valor Raiz >buscado{
+           árbol = nodo izquierdo
+           Encontrado(Arbol, buscado)
+           }
+       Si valor Raiz < buscado{
+           árbol = nodo derecho
+           Encontrado(Arbol, buscado)
+           }
+       }
+   }
+}
