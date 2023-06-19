@@ -1,2 +1,12 @@
 # eda-lab-b-23a
 laboratorio 4
+¿Explique como es el algoritmo que  ́o para obtener el  ́arbol binario de b ́usqueda con
+la librerıa Graph Stream? Recuerde que pueden haber operaciones sobre el BST.
+El algoritmo que implementé para obtener el Árbol Binario de Búsqueda (BST, por sus siglas en inglés) con la librería Graph Stream es el siguiente:
+
+Crear un objeto Graph de Graph Stream para representar el árbol binario de búsqueda.
+Crear un objeto BinaryTree que contenga la lógica para insertar y eliminar nodos del árbol.
+Crear un objeto BSTVisualizer que se encargue de visualizar el árbol en la pantalla.
+Abrir una ventana de visualización con BSTVisualizer.
+Repetir lo siguiente mientras se recibe entrada del usuario: a. Si la entrada es una tecla de flecha izquierda, mover el nodo seleccionado (si lo hay) hacia la izquierda en el árbol y actualizar la visualización. b. Si la entrada es una tecla de flecha derecha, mover el nodo seleccionado (si lo hay) hacia la derecha en el árbol y actualizar la visualización. c. Si la entrada es una tecla de flecha arriba, seleccionar el nodo padre del nodo seleccionado actualmente y actualizar la visualización. d. Si la entrada es una tecla de flecha abajo, seleccionar el hijo izquierdo del nodo seleccionado actualmente (si lo hay) y actualizar la visualización. e. Si la entrada es la tecla "I", insertar un nuevo valor en el árbol binario de búsqueda usando el método insert del objeto BinaryTree y actualizar la visualización. f. Si la entrada es la tecla "D", eliminar un valor existente del árbol binario de búsqueda usando el método delete del objeto BinaryTree y actualizar la visualización. g. Si la entrada es la tecla "R", generar un nuevo árbol binario de búsqueda aleatorio con la misma cantidad de nodos que el árbol actual y actualizar la visualización. h. Si la entrada es la tecla "Q", cerrar la ventana de visualización y salir del programa.
+Después de salir del bucle principal, liberar todos los recursos utilizados por el programa.
