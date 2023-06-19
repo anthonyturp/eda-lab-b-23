@@ -1,2 +1,97 @@
 # eda-lab-b-23a
-nuevo
+laboratorio 5
+Introducción
+
+En este informe, se abordará la implementación de árboles AVL en Java, así como las funciones principales que se pueden realizar en dicho árbol. Se explicará cada función, su complejidad y su importancia en el árbol AVL.
+
+Árboles AVL
+
+Los árboles AVL son una estructura de datos que se utiliza para almacenar datos de manera ordenada y eficiente. La particularidad de este tipo de árbol radica en su característica de balanceo, es decir, que no permite que la diferencia entre la altura de los subárboles de cada nodo sea mayor a 1, de esta forma se asegura que las operaciones de búsqueda, inserción y eliminación sean de complejidad O(log n).
+
+Implementación
+
+Para la implementación del árbol AVL en Java, se empleó la creación de una clase llamada Node, que representa los nodos del árbol. La clase tiene un constructor que recibe el valor del nodo, un puntero al nodo de la izquierda y otro puntero al nodo de la derecha. Además, tiene dos variables que almacenan la altura del subárbol de la izquierda y el subárbol de la derecha.
+
+public class Node {
+   int value;
+Node left;
+Node right;
+int heightLeft;
+int heightRight;
+
+public Node(int value) {
+    this.value = value;
+    left = null;
+    right = null;
+    heightLeft = 1;
+    heightRight = 1;
+}
+}
+La creación de la clase Node es importante porque es utilizada por la clase AVLTree que representa el árbol AVL. Esta clase tiene métodos que nos permiten añadir, buscar, eliminar, encontrar los nodos mínimo y máximo, encontrar el padre de un determinado nodo y encontrar los hijos de un determinado nodo. A continuación se presenta cada uno de los métodos:
+
+search()
+
+El método search() nos permite buscar un valor específico en el árbol AVL. Este método tiene como parámetro el valor a buscar y retorna true si el valor se encuentra en el árbol y false en caso contrario.
+public boolean search(int value) {
+    Node current = root;
+    while (current != null) {
+        if (current.value == value)
+            return true;
+        else if (current.value > value)
+            current = current.left;
+        else
+            current = current.right;
+    }
+    return false;
+}
+Este método recorre el árbol comparando el valor a buscar con el valor de cada nodo, para decidir si se mueve hacia el subárbol de la izquierda o hacia el subárbol de la derecha. Si encuentra el valor devuelve true y termina la búsqueda. En caso contrario, si termina de recorrer todo el árbol sin encontrar el valor, devuelve false.
+
+getmin()
+
+El método getmin() devuelve el nodo con el valor mínimo en el árbol AVL. Para obtener este nodo, se recorren los nodos hacia la izquierda hasta encontrar el nodo hoja más a la izquierda.
+public Node getMin() {
+    Node current = root;
+    while (current.left != null)
+        current = current.left;
+    return current;
+}
+getmax()
+
+El método getmax() devuelve el nodo con el valor máximo en el árbol AVL. Para obtener este nodo, se recorren los nodos hacia la derecha hasta encontrar el nodo hoja más a la derecha.
+public Node getMax() {
+    Node current = root;
+    while (current.right != null)
+        current = current.right;
+    return current;
+}
+parent()
+
+El método parent() devuelve el nodo padre del nodo que se busca. Este método recibe como parámetro el valor del nodo y se recorre el árbol hasta encontrar el nodo que tenga como hijo el nodo buscado.
+public Node parent(int value) {
+    Node current = root;
+    Node parent = null;
+    while (current != null && current.value != value) {
+        parent = current;
+        if (current.value > value)
+            current = current.left;
+        else
+            current = current.right;
+    }
+    if (current == null)
+        return null;
+    return parent;
+}
+En caso de no encontrar el nodo, devuelve null.
+
+son()
+
+El método son() devuelve los nodos hijos de un nodo específico. Este método recibe como parámetro el valor del nodo que se busca y devuelve sus nodos hijo, si los tiene.
+public Node[] son(int value) {
+    Node current = root;
+    while (current != null && current.value != value) {
+        if (current.value > value)
+            current = current.left;
+        else
+            current = current.rigt;
+    }
+    if (current ==
