@@ -1,2 +1,12 @@
 # eda-lab-b-23a
-nuevo
+laboratorio 5
+¿Explique como es el algoritmo que implemento para obtener el factor de equilibrio de un nodo?.
+En un árbol AVL con nodos x, el factor de equilibrio se define como la diferencia entre la altura del subárbol derecho de x y la altura del subárbol izquierdo de x. Si el factor de equilibrio de un nodo es mayor que 1 o menor que -1, el árbol no está equilibrado, y uno o más nodos pueden requerir ser rotados para restaurar el equilibrio del árbol.
+
+Para obtener el factor de equilibrio de un nodo x, se sigue este algoritmo:
+
+Calcular la altura del subárbol derecho y la altura del subárbol izquierdo de x.
+Restar la altura del subárbol izquierdo de la altura del subárbol derecho.
+El resultado de la resta es el factor de equilibrio de x.
+Si el factor de equilibrio es mayor que 1 o menor que -1, el árbol está desequilibrado.
+Este algoritmo es simple y directo, y se utiliza ampliamente en la implementación de árboles AVL.
